@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Syahir Amri bin Mohd Azha, 22007728-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bytekurma.BKController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="240.0" style="-fx-background-color: #e7e7e7;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bkLogoType2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="77.0" style="-fx-background-color: #e7e7e7;" text="Welcome Back!">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="145.0" prefHeight="15.0" prefWidth="57.0" text="Username">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="205.0" text="Password">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" layoutX="29.0" layoutY="165.0" prefHeight="25.0" prefWidth="184.0" />
+            <TextField fx:id="txtPassword" layoutX="29.0" layoutY="225.0" prefHeight="25.0" prefWidth="184.0" />
+            <Button fx:id="btnLogin" layoutX="29.0" layoutY="290.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: #a25b57; -fx-text-fill: #f5f5f5;" text="Log In" textAlignment="CENTER" textFill="#a25b57">
+               <font>
+                  <Font name="Segoe UI" size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="29.0" layoutY="94.0" prefHeight="36.0" prefWidth="184.0" text="Enter your details to start tracking with us." wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnPassword" layoutX="122.0" layoutY="250.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="97.0" style="-fx-background-color: #e7e7e7;" text="Forgot Password?" textFill="#a25b57">
+               <font>
+                  <Font name="Segoe UI Bold" size="10.0" />
+               </font>
+            </Button>
+            <Line endX="67.5" layoutX="137.0" layoutY="335.0" startX="-100.0" />
+            <Label layoutX="67.0" layoutY="346.0" prefHeight="20.0" prefWidth="57.0" text="No account?" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSignUp" layoutX="123.0" layoutY="346.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0" style="-fx-background-color: #e7e7e7;" text="Sign Up" textFill="#a25b57">
+               <font>
+                  <Font name="Segoe UI Bold" size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="360.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@byteKurmaLoginImage.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

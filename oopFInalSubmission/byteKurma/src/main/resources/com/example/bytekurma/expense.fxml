@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Manas Ismail Abdylas, 22008600-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bytekurma.ExpenseController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnHistory" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="177.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #f5f5f5;" text="         History" />
+                  <ImageView fitHeight="96.0" fitWidth="101.0" layoutX="52.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bkLogoType1.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="42.0" layoutX="129.0" layoutY="121.0" startX="-100.0" />
+                  <Button fx:id="btnAccount" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="215.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #f5f5f5;" text="         Account" />
+                  <Button fx:id="btnHome" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="139.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #f5f5f5;" text="         Home">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLogOut" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="356.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #f5f5f5;" text="         Log Out" />
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="32.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/home.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="32.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/history.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="32.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/account.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="42.0" layoutX="129.0" layoutY="343.0" startX="-100.0" />
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="32.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="200.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #e7e7e7;">
+               <children>
+                  <Label layoutX="22.0" layoutY="23.0" prefHeight="30.0" prefWidth="107.0" text="Add Expense">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="22.0" layoutY="84.0" prefHeight="76.0" prefWidth="355.0" style="-fx-background-color: #f5f5f5;">
+                     <children>
+                        <Label fx:id="lblTotal" layoutX="60.0" layoutY="21.0" prefHeight="30.0" prefWidth="57.0" text="RM " textFill="#a25b57">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtAmount" layoutX="117.0" layoutY="13.0" prefHeight="51.0" prefWidth="178.0" promptText="0.00">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="220.0" layoutX="160.0" layoutY="64.0" startX="-140.5" />
+                  <Label layoutX="109.0" layoutY="172.0" prefHeight="15.0" prefWidth="38.0" text="Date">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="110.0" layoutY="229.0" prefHeight="15.0" prefWidth="57.0" text="Category">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="110.0" layoutY="286.0" prefHeight="15.0" prefWidth="57.0" text="Method">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dtpDate" layoutX="110.0" layoutY="192.0" prefHeight="25.0" prefWidth="184.0" />
+                  <Button fx:id="btnSubmit" layoutX="109.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: #a25b57; -fx-text-fill: #f5f5f5;" text="Submit" textAlignment="CENTER" textFill="#a25b57">
+                     <font>
+                        <Font name="Segoe UI" size="11.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="cboCategory" layoutX="110.0" layoutY="249.0" prefHeight="25.0" prefWidth="184.0" promptText="none" visibleRowCount="4" />
+                  <ComboBox fx:id="cboMethod" layoutX="110.0" layoutY="306.0" prefHeight="25.0" prefWidth="184.0" promptText="none" visibleRowCount="3" />
+                  <Button fx:id="btnBack" layoutX="344.0" layoutY="19.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="0.0" style="-fx-background-color: #e7e7e7;" text="&lt;" textFill="#a25b57">
+                     <font>
+                        <Font name="Segoe UI Black Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
